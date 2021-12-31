@@ -1,0 +1,61 @@
+button {
+  margin-top: 20px;
+}
+
+#outputList {
+  list-style: none;
+  li {
+    text-decoration: underline;
+    color: blue;
+    margin-bottom: 10px;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.overlay {
+  display: none;
+}
+
+.overlay.show {
+  display: block;
+  border: solid black 1px;
+  background-color: beige;
+  height: 400px;
+  width: 300px;
+  border-radius: 20px;
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  #infoOverlay-inner {
+    width: 80%;
+    margin: 0 auto;
+    img {
+      display: inline-block;
+      margin-left: 20px;
+      width: 100px;
+      height: auto;
+      transform: translate(10%, 20%);
+    }
+    p#flagLabel {
+      display: inline-block;
+    }
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+    }
+    p#closeOverlay {
+      margin-top: 30px;
+      text-decoration: underline;
+      text-align: center;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
